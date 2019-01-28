@@ -1,4 +1,4 @@
-# Msweeper
+# M'Sweeper
 CSc project 2018-19
 
 You will need the pygame library for python 3.7 to run this
