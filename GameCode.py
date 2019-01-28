@@ -71,13 +71,13 @@ while inputBounds:
   yVal=int(input("No. of rows:"))
   if xVal<3 or yVal<3:
     print("Grid too small")
-  elif xVal>12 or yVal>12:
+  elif xVal>11 or yVal>11:
     print("Grid too big")
   else:
     inputBounds=False
 
 bombDividend=6
-mode=input("Difficulty - Easy[E] or Hard[H]?:")
+mode=input("Difficulty - Easy[E] or Hard[H]?:").upper()
 if mode=='H':
   bombDividend=5
 
@@ -301,6 +301,8 @@ def gameloop():
             if counter==nBomb:
               dispStruct1=realStruct
               gameWin()
+          else:
+            counter=0
     
     cursor(cursor_x,cursor_y)
     
